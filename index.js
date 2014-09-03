@@ -1,10 +1,11 @@
 /** @jsx React.DOM*/
 /**
- * Created by Andrew Laiff on 11.07.14.
+ * Created by laiff on 03.09.14.
  */
 'use strict';
 
 var React = require('react/addons');
+var dom = React.DOM;
 
 function createIcon(type) {
     var iconType = type;
@@ -29,7 +30,7 @@ function createIcon(type) {
             var className = cs(classes) + " " + (this.props.className || '');
 
             return (
-                <i className={className}>this.props.children</i>
+                dom.i({className: className}, this.props.children)
                 );
         }
     });
@@ -46,7 +47,7 @@ var IconStack = React.createClass({
         var className = cs(classes) + " " + (this.props.className || '');
 
         return (
-            <span className={className}>this.props.children</span>
+            dom.span({className: className}, this.props.children)
             );
     }
 });
@@ -60,7 +61,7 @@ var Ul = React.createClass({
         var className = cs(classes) + " " + (this.props.className || '');
 
         return (
-            <ul className={className}>this.props.children</ul>
+            dom.ul({className: className}, this.props.children)
             );
     }
 });
@@ -71,7 +72,7 @@ var Animate = React.createClass({
     getInitialState: function () {
         return {
             childCount: 0,
-            child: <span />
+            child: (dom.span({}, null))
         };
     },
     componentWillMount: function () {
