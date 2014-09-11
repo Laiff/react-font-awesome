@@ -29,7 +29,7 @@ function createIcon(type) {
 
             var className = cs(classes) + " " + (this.props.className || '');
 
-            return (
+            return this.transferPropsTo(
                 dom.i({className: className}, this.props.children)
                 );
         }
@@ -46,7 +46,7 @@ var IconStack = React.createClass({
 
         var className = cs(classes) + " " + (this.props.className || '');
 
-        return (
+        return this.transferPropsTo(
             dom.span({className: className}, this.props.children)
             );
     }
@@ -60,7 +60,7 @@ var Ul = React.createClass({
         }
         var className = cs(classes) + " " + (this.props.className || '');
 
-        return (
+        return this.transferPropsTo(
             dom.ul({className: className}, this.props.children)
             );
     }
