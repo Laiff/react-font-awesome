@@ -15,7 +15,8 @@
     "font",
     "font-awesome",
     "components",
-    "icon"
+    "icon",
+    "react-component"
   ],
   "author": "Andrew Laiff",
   "license": "MIT",
