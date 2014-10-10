@@ -1,6 +1,6 @@
 {
   "name": "react-font-awesome",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React components for awesome work with FontAwesome",
   "main": "index.js",
   "scripts": {
@@ -23,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/Laiff/react-font-awesome/issues"
   },
-  "dependencies": {
-    "react": "~0.11.1"
+  "peerDependencies": {
+    "react": "~0.11.2"
   }
 }
