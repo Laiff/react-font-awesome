@@ -24,6 +24,6 @@
     "url": "https://github.com/Laiff/react-font-awesome/issues"
   },
   "peerDependencies": {
-    "react": "~0.11.2"
+    "react": ">=0.11.2"
   }
 }
