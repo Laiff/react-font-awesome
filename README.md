@@ -21,7 +21,7 @@ var IconExample = React.createClass({
 React.renderComponent(<IconExample />, document.body);
 ```
 
-## Instalation
+## Installation
 
 ``` bash
   npm install --save react-font-awesome
